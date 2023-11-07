@@ -14,6 +14,6 @@ pipeline {
                 steps {
                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/nikithagh/register-app.git'
                 }
-        }
+         }
     }
 }
