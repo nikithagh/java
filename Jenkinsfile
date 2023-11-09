@@ -52,6 +52,7 @@ pipeline {
                     }
                  }
             }
+            echo "deployed to docker successfully"
         }
     }
 }
