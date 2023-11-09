@@ -3,7 +3,7 @@ pipeline {
     tools {
         jdk 'Java17'
         maven 'Maven3'
-    } 
+    }
     environment {
         APP_NAME = "java-project-ci"
         RELEASE = "1.0.0"
