@@ -54,13 +54,7 @@ pipeline {
                  }
             }
         }
-        stage("Trivy Scan")
-        {
-            steps{
-              sh ('docker run -v /var/run/docker.sock:var/run/docker.sock aquasec/trivy image nikitha1997/java-project-ci:latest --no-progress --scanners vuln  --exit-code 0 --severity HIGH,CRITICAL --format table')
-            }
-        }
-        stage("Cleanup artifacts")
+        stage('Cleanup artifacts')
         {
             steps{
                 script{
